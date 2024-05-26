@@ -24,9 +24,7 @@ const MigrationAgentSchema =  mongoose.Schema(
             required: true
 
         },
-        
-       
-       
+          
         languagesSpoken:{
             type:[String],
             required:true
@@ -34,6 +32,16 @@ const MigrationAgentSchema =  mongoose.Schema(
         fileName:{
             type: String,
             required: true
+        },
+        availableTimeSlot:{
+                type:[String],
+                required:true
+
+        },
+
+        createdAt:{
+            type: Date,
+            default: Date.now
         }
      
     }

@@ -1,5 +1,4 @@
 export const adminPanel=(req,res)=>{
-    res.render(
-        ("admin")
-    )
+    res.render("admin")
+    
 }
